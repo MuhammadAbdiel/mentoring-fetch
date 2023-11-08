@@ -1,4 +1,4 @@
-<p class="fw-bold fs-5 ">Edit Mahasiswa</p>
+<p class="fw-bold fs-5 ">Edit Product</p>
 <form method="post" action="<?= base_url('index.php/admin/mahasiswa/update/' . $mahasiswa->id); ?>" class="mt-3">
 	<div class="mb-3">
 		<label for="nim" class="form-label">NIM:</label>
@@ -17,7 +17,7 @@
 				<option value="">Pilih Jenis Kelamin</option>
 				<option value="L" <?= $mahasiswa->jenis_kelamin == "L" ? "selected" : "" ?>>Laki-laki</option>
 				<option value="P" <?= $mahasiswa->jenis_kelamin == "P" ? "selected" : "" ?>>Perempuan</option>
-			</select </div </div>
+			</select>
 			<div class="mb-3">
 				<label for="id_hobi" class="form-label">Hobi:</label>
 				<select class="form-select select2" id="id_hobi" name="id_hobi[]" multiple required>
